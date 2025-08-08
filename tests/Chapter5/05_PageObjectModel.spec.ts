@@ -24,5 +24,5 @@ await resultPage.clickOnPlayList(keyword);
 //create object of SubjectPage
 const subjectPage = new SubjectPage(page);
 await subjectPage.validatePageTitle(title);
-
+console.log('Test execution ended');
 })
