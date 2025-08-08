@@ -1,0 +1,20 @@
+
+# Node
+node_modules/
+.env
+
+# Playwright test outputs
+test-results/
+playwright-report/
+blob-report/
+trace.zip
+/playwright/.cache/
+
+# Allure reports
+allure-results/
+allure-report/
+
+# Screenshots / videos
+screenshots/
+videos/
+

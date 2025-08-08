@@ -1,0 +1,384 @@
+{
+  "config": {
+    "configFile": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/playwright.config.ts",
+    "rootDir": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/node_modules/allure-playwright/dist/cjs/index.js",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "json-test-report.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "junit-test-report.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Chapter4/04_TestReports.spec.ts",
+      "file": "Chapter4/04_TestReports.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SmokeTesting",
+          "file": "Chapter4/04_TestReports.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "keyboard action test1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7965,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Page Title: FILM MUSIC | Search Results | Tolga TEM\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "go to tolgatem.com",
+                          "duration": 1892
+                        },
+                        {
+                          "title": "keyboard actions, type in search box",
+                          "duration": 3660
+                        }
+                      ],
+                      "startTime": "2025-08-02T23:56:26.690Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-SmokeTesting-keyboard-action-test1-Google-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-SmokeTesting-keyboard-action-test1-Google-Chrome/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "44d2339b7f9c0ac167c5-f38672a84161b69358c0",
+              "file": "Chapter4/04_TestReports.spec.ts",
+              "line": 4,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "RegressionTesting",
+          "file": "Chapter4/04_TestReports.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "keyboard action test2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8406,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Page Title: MUSIC & SOUND PRODUCTION | Search Results | Tolga TEM\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "go to tolgatem.com",
+                          "duration": 2087
+                        },
+                        {
+                          "title": "keyboard actions, type in search box",
+                          "duration": 3482
+                        }
+                      ],
+                      "startTime": "2025-08-02T23:56:26.552Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-Re-fb5ff-sting-keyboard-action-test2-Google-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-Re-fb5ff-sting-keyboard-action-test2-Google-Chrome/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "44d2339b7f9c0ac167c5-82179f14e020a2e97508",
+              "file": "Chapter4/04_TestReports.spec.ts",
+              "line": 26,
+              "column": 5
+            },
+            {
+              "title": "keyboard action test3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7844,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Page Title: ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "go to tolgatem.com",
+                          "duration": 1872
+                        },
+                        {
+                          "title": "keyboard actions, type in search box",
+                          "duration": 3460
+                        }
+                      ],
+                      "startTime": "2025-08-02T23:56:26.565Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-Re-70fd7-sting-keyboard-action-test3-Google-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-Re-70fd7-sting-keyboard-action-test3-Google-Chrome/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "44d2339b7f9c0ac167c5-188f7f59f9b1884d85d8",
+              "file": "Chapter4/04_TestReports.spec.ts",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "keyboard action test4",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 9787,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"\u001b[7m \u001b[27mORCHESTRAL COMPOSITION | Search Results \u001b[7m \u001b[27m|\u001b[7m \u001b[27m Tolga TEM\"\u001b[39m\nReceived string: \u001b[31m\"ORCHESTRAL COMPOSITION\u001b[7mS\u001b[27m | Search Results | Tolga TEM\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.tolgatem.com/?s=ORCHESTRAL+COMPOSITIONS\"\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"\u001b[7m \u001b[27mORCHESTRAL COMPOSITION | Search Results \u001b[7m \u001b[27m|\u001b[7m \u001b[27m Tolga TEM\"\u001b[39m\nReceived string: \u001b[31m\"ORCHESTRAL COMPOSITION\u001b[7mS\u001b[27m | Search Results | Tolga TEM\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.tolgatem.com/?s=ORCHESTRAL+COMPOSITIONS\"\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM\"\u001b[22m\n\n    at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:78:29\n    at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:73:1",
+                        "location": {
+                          "file": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts",
+                          "column": 29,
+                          "line": 78
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m' ORCHESTRAL COMPOSITION | Search Results  |  Tolga TEM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \u001b[36mconst\u001b[39m title \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'Page Title:'\u001b[39m\u001b[33m,\u001b[39m title)\u001b[33m;\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts",
+                            "column": 29,
+                            "line": 78
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"\u001b[7m \u001b[27mORCHESTRAL COMPOSITION | Search Results \u001b[7m \u001b[27m|\u001b[7m \u001b[27m Tolga TEM\"\u001b[39m\nReceived string: \u001b[31m\"ORCHESTRAL COMPOSITION\u001b[7mS\u001b[27m | Search Results | Tolga TEM\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.tolgatem.com/?s=ORCHESTRAL+COMPOSITIONS\"\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 76 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m' ORCHESTRAL COMPOSITION | Search Results  |  Tolga TEM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \u001b[36mconst\u001b[39m title \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'Page Title:'\u001b[39m\u001b[33m,\u001b[39m title)\u001b[33m;\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[0m\n\u001b[2m    at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:78:29\u001b[22m\n\u001b[2m    at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:73:1\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Page Title: ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "go to tolgatem.com",
+                          "duration": 1902
+                        },
+                        {
+                          "title": "keyboard actions, type in search box",
+                          "duration": 5562,
+                          "error": {
+                            "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"\u001b[7m \u001b[27mORCHESTRAL COMPOSITION | Search Results \u001b[7m \u001b[27m|\u001b[7m \u001b[27m Tolga TEM\"\u001b[39m\nReceived string: \u001b[31m\"ORCHESTRAL COMPOSITION\u001b[7mS\u001b[27m | Search Results | Tolga TEM\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.tolgatem.com/?s=ORCHESTRAL+COMPOSITIONS\"\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM\"\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"\u001b[7m \u001b[27mORCHESTRAL COMPOSITION | Search Results \u001b[7m \u001b[27m|\u001b[7m \u001b[27m Tolga TEM\"\u001b[39m\nReceived string: \u001b[31m\"ORCHESTRAL COMPOSITION\u001b[7mS\u001b[27m | Search Results | Tolga TEM\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"soft toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.tolgatem.com/?s=ORCHESTRAL+COMPOSITIONS\"\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM\"\u001b[22m\n\n    at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:78:29\n    at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:73:1",
+                            "location": {
+                              "file": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts",
+                              "column": 29,
+                              "line": 78
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m' ORCHESTRAL COMPOSITION | Search Results  |  Tolga TEM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m     \u001b[36mconst\u001b[39m title \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'Page Title:'\u001b[39m\u001b[33m,\u001b[39m title)\u001b[33m;\u001b[39m\n \u001b[90m 81 |\u001b[39m     \u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-08-02T23:56:26.592Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts",
+                        "column": 29,
+                        "line": 78
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "44d2339b7f9c0ac167c5-61922eddbb65b22ab8f8",
+              "file": "Chapter4/04_TestReports.spec.ts",
+              "line": 66,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-02T23:56:25.713Z",
+    "duration": 12528.594000000001,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

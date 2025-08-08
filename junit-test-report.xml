@@ -1,0 +1,88 @@
+<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="12.528594000000002">
+<testsuite name="Chapter4/04_TestReports.spec.ts" timestamp="2025-08-02T23:56:25.733Z" hostname="Google Chrome" tests="4" failures="1" skipped="0" time="34.002" errors="0">
+<testcase name="SmokeTesting › keyboard action test1" classname="Chapter4/04_TestReports.spec.ts" time="7.965">
+<system-out>
+<![CDATA[Page Title: FILM MUSIC | Search Results | Tolga TEM
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-SmokeTesting-keyboard-action-test1-Google-Chrome/test-finished-1.png]]
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-SmokeTesting-keyboard-action-test1-Google-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RegressionTesting › keyboard action test2" classname="Chapter4/04_TestReports.spec.ts" time="8.406">
+<system-out>
+<![CDATA[Page Title: MUSIC & SOUND PRODUCTION | Search Results | Tolga TEM
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-Re-fb5ff-sting-keyboard-action-test2-Google-Chrome/test-finished-1.png]]
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-Re-fb5ff-sting-keyboard-action-test2-Google-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RegressionTesting › keyboard action test3" classname="Chapter4/04_TestReports.spec.ts" time="7.844">
+<system-out>
+<![CDATA[Page Title: ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-Re-70fd7-sting-keyboard-action-test3-Google-Chrome/test-finished-1.png]]
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-Re-70fd7-sting-keyboard-action-test3-Google-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RegressionTesting › keyboard action test4" classname="Chapter4/04_TestReports.spec.ts" time="9.787">
+<failure message="04_TestReports.spec.ts:66:5 keyboard action test4" type="FAILURE">
+<![CDATA[  [Google Chrome] › Chapter4/04_TestReports.spec.ts:66:5 › RegressionTesting › keyboard action test4 › keyboard actions, type in search box 
+
+    Error: Timed out 5000ms waiting for expect(page).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected string: " ORCHESTRAL COMPOSITION | Search Results  |  Tolga TEM"
+    Received string: "ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM"
+    Call log:
+      - Expect "soft toHaveTitle" with timeout 5000ms
+      - waiting for locator(':root')
+        - waiting for navigation to finish...
+        - navigated to "https://www.tolgatem.com/?s=ORCHESTRAL+COMPOSITIONS"
+        6 × locator resolved to <html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">…</html>
+          - unexpected value "ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM"
+
+
+      76 |     await page.keyboard.press('Enter');
+      77 |
+    > 78 |     await expect.soft(page).toHaveTitle(' ORCHESTRAL COMPOSITION | Search Results  |  Tolga TEM');
+         |                             ^
+      79 |     const title = await page.title();
+      80 | console.log('Page Title:', title);
+      81 |     
+        at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:78:29
+        at /Volumes/TestingTools/DevProjects/playwrightTypeScriptTutorial/tests/Chapter4/04_TestReports.spec.ts:73:1
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Page Title: ORCHESTRAL COMPOSITIONS | Search Results | Tolga TEM
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/error-context.md]]
+
+[[ATTACHMENT|test-results/Chapter4-04_TestReports-Re-335e0-sting-keyboard-action-test4-Google-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
