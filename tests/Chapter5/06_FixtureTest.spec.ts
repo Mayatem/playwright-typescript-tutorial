@@ -1,18 +1,11 @@
-import {test, expect} from '@playwright/test';
+// import {test, expect} from '@playwright/test';
+import {test} from '../../src/fixture/TestFixture'
 import { HomePage } from '../../src/pages/HomePage';
 import { ResultPage } from '../../src/pages/ResultPage';
 import { SubjectPage } from '../../src/pages/SubjectPage';
 
-test('Ppge Object Model Test', async({page})=>{
-
-
-await page.setViewportSize({
-    width: 640,
-    height: 480,
-})
-
-console.log('Test execution started');
-
+test('Global Hook Test', async({page})=>{
+console.log('test execution started...')
 
 const keyword = `${process.env.SEARCH_KEYWORDS}`;
 const title = `${process.env.SEARCH_KEYWORDS}` +   ' | Search Results  |  Tolga TEM';
@@ -30,5 +23,6 @@ await resultPage.clickOnPlayList(keyword);
 //create object of SubjectPage
 const subjectPage = new SubjectPage(page);
 await subjectPage.validatePageTitle(title);
-console.log('Test execution ended');
-})
+
+console.log('test execution ended...')
+});
