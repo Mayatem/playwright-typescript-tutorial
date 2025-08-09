@@ -1,7 +1,8 @@
 
+
 import fs from 'fs'; //Imports Node’s filesystem module (here in its sync/CB API form).
 import path from 'path';  //Imports Node’s path utilities (for building OS‑safe paths).
-import {TestData} from '../interface/Module1TetData.interface'; //Imports the TypeScript type TestData for type‑checking.
+import {TestData} from '../interface/Module1TestData.interface'; //Imports the TypeScript type TestData for type‑checking.
 
 export async function loadTestData() { // Exports an async function. Because it’s async, it returns a Promise<TestData> even if you don’t await inside.
     //const environment = `${process.env.TEST_EXECUTION_ENV}` || 'qa';
@@ -52,10 +53,5 @@ export async function loadTestData(): Promise<TestData> {
     return jsonData;
 }
 
-
-
-
-
-
-
 */
+

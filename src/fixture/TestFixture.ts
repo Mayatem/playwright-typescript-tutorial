@@ -3,31 +3,30 @@ import { ResultPage } from "../pages/ResultPage";
 import { HomePage } from "../pages/HomePage";
 import { SubjectPage } from "../pages/SubjectPage";
 
-import { loadTestData } from "../utils/JSONHelper";
-import { TestData } from "../interface/Module1TetData.interface";
+import { loadTestData } from "../utils/JsonHelper";
+import { TestData } from "../interface/Module1TestData.interface";
+
+
 
 export const test = base.extend<{
   saveLogs: void;
   homePage: HomePage;
   resultPage: ResultPage;
   subjectPage: SubjectPage;
-  testData: TestData;
+  testData: TestData
 }>({
-  saveLogs: [
-    async ({}, use) => {
-      console.log("Global before is running...");
+   saveLogs: [async ({ }, use) => {
+        console.log('Global before is running...');
 
-      await use();
+        await use();
 
-      console.log("Global afterEach is running...");
+        console.log('Global afterEach is running...');
     },
-    { auto: true },
-  ],
+    { auto: true }],
   homePage: async ({ page }, use) => {
     const homePage = new HomePage(page);
     await use(homePage);
-  },
-
+    },
   resultPage: async ({ page }, use) => {
     const resultPage = new ResultPage(page);
     await use(resultPage);
@@ -38,10 +37,10 @@ export const test = base.extend<{
     await use(subjectPag);
   },
 
-  testData: async ({}, use) => {
-    const data = await loadTestData();
-    await use(data);
-  }
+  testData: async ({ }, use) => {
+        const data = await loadTestData();
+        await use(data);
+    }
 });
 
 export { expect } from "@playwright/test";
