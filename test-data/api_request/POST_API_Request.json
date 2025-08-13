@@ -1,0 +1,11 @@
+{
+    "firstname": "Novik",
+    "lastname": "Star",
+    "totalprice": 75,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-08-15",
+        "checkout": "2025-08-30"
+    },
+    "additionalneeds": "Breakfast"
+}
