@@ -1,0 +1,11 @@
+{
+    "firstname": "SuperNova",
+    "lastname": "SuperStar",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-008-01",
+        "checkout": "2025-08-25"
+    },
+    "additionalneeds": "super meals"
+}
