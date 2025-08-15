@@ -9,7 +9,7 @@ import fs from "fs";
 
 test.use({  baseURL: process.env.BASE_API_URL, });
 
-test("Create POST API Request using dynamic file in playwright & typescript", async ({request }) => {
+test("Create POST API Request using dynamic file in playwright & typescript", {tag: ['@SmokeTesting', '@@PlaywrightWithJenkins']}, async ({request }) => {
 
 const filePath = path.join( __dirname, "../../test-data/api_request/Dynamic_POST_API_Request.json" );
 const jsonTemplate = fs.readFileSync(filePath, "utf-8");

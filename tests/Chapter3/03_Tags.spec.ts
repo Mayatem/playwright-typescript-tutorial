@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 
 
-test('keyboard action test1', {tag: ['@SmokeTesting']}, async ({page}) => {
+test('keyboard action test1', {tag: ['@SmokeTesting', '@@PlaywrightWithJenkins']}, async ({page}) => {
 
 await test.step('go to tolgatem.com', async()=> {
     await page.goto('https://www.tolgatem.com/');
